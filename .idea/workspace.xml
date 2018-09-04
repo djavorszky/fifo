@@ -4,7 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/fifo_test.go" line="80" mnemonic="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa21682-5685-4e0c-a914-b0f1514cdfdc" name="Default Changelist" comment="" />
+    <list default="true" id="8aa21682-5685-4e0c-a914-b0f1514cdfdc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fifo.go" beforeDir="false" afterPath="$PROJECT_DIR$/fifo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fifo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/fifo_test.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,31 +19,33 @@
     <session id="951062643">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="4" />
+          <entry key="go" value="8" />
           <entry key="tempfile125061797" value="1" />
           <entry key="tempfile669515287" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="4" />
+          <entry key="Go" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="3780" />
+          <entry key="go" value="7241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="3780" />
+          <entry key="Go" value="7241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger" />
@@ -47,12 +53,21 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmd/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="136">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fifo.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
               <folding>
                 <element signature="e#14#37#0" expanded="true" />
               </folding>
@@ -61,22 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fifo.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fifo_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
-              <folding>
-                <element signature="e#14#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="490">
+              <caret line="162" column="67" selection-start-line="162" selection-start-column="67" selection-end-line="162" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -91,6 +94,9 @@
     </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -99,8 +105,8 @@
       <list>
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/cmd/main.go" />
-        <option value="$PROJECT_DIR$/fifo.go" />
         <option value="$PROJECT_DIR$/fifo_test.go" />
+        <option value="$PROJECT_DIR$/fifo.go" />
       </list>
     </option>
   </component>
@@ -116,6 +122,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -171,7 +178,7 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRecursiveCopy in fifo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_fileName in fifo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="fifo" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
@@ -180,7 +187,7 @@
       <package value="fifo" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestRecursiveCopy$" />
+      <pattern value="^Test_fileName$" />
       <method v="2" />
     </configuration>
     <configuration name="go test fifo" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -194,47 +201,58 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="verbose test fifo" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="fifo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-v" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go run" />
-      <item itemvalue="Go Test.TestRecursiveCopy in fifo" />
+      <item itemvalue="Go Test.verbose test fifo" />
       <item itemvalue="Go Test.go test fifo" />
+      <item itemvalue="Go Test.Test_fileName in fifo" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.go test fifo" />
-        <item itemvalue="Go Test.TestRecursiveCopy in fifo" />
+        <item itemvalue="Go Test.Test_fileName in fifo" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 12m 53s.xml">
+    <history-entry file="verbose_test_fifo - 2018.09.04 at 19h 17m 25s.xml">
+      <configuration name="verbose test fifo" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="verbose_test_fifo - 2018.09.04 at 19h 19m 13s.xml">
+      <configuration name="verbose test fifo" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_fifo - 2018.09.04 at 19h 19m 26s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 13m 14s.xml">
+    <history-entry file="go_test_fifo - 2018.09.04 at 19h 41m 44s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 14m 04s.xml">
+    <history-entry file="go_test_fifo - 2018.09.04 at 19h 42m 25s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 14m 08s.xml">
+    <history-entry file="go_test_fifo - 2018.09.04 at 19h 43m 48s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 14m 47s.xml">
+    <history-entry file="go_test_fifo - 2018.09.04 at 19h 45m 32s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 14m 55s.xml">
+    <history-entry file="go_test_fifo - 2018.09.04 at 20h 04m 10s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 15m 01s.xml">
+    <history-entry file="go_test_fifo - 2018.09.04 at 20h 04m 16s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 22m 09s.xml">
-      <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 22m 43s.xml">
-      <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="go_test_fifo - 2018.09.03 at 20h 22m 55s.xml">
+    <history-entry file="go_test_fifo - 2018.09.04 at 20h 04m 37s.xml">
       <configuration name="go test fifo" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
@@ -242,24 +260,24 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34561214" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29035753" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35063437" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,39 +291,42 @@
     <proxy>direct</proxy>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/two/c/notPorn/tempfile125061797" />
+    <entry file="file://$PROJECT_DIR$/tests/one/tempfile669515287" />
+    <entry file="file://C:/Go/src/path/filepath/path.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="398" column="5" selection-start-line="398" selection-start-column="5" selection-end-line="398" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cmd/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#14#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fifo.go">
+    <entry file="file://C:/Go/src/os/error.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/two/c/notPorn/tempfile125061797">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/one/tempfile669515287">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="1" />
+        <state relative-caret-position="209">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fifo_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="490">
+          <caret line="162" column="67" selection-start-line="162" selection-start-column="67" selection-end-line="162" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fifo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
           <folding>
-            <element signature="e#14#35#0" expanded="true" />
+            <element signature="e#14#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -15,12 +15,10 @@ var (
 		filepath.Join("two", "c", "notPorn"),
 	}
 	testFileLocations = []string{
-		filepath.Join("one"),
+		"one", "two", "two",
 		filepath.Join("one", "a"),
 		filepath.Join("one", "a", "temp"),
 		filepath.Join("one", "b"),
-		filepath.Join("two"),
-		filepath.Join("two"),
 		filepath.Join("two", "c", "notPorn"),
 	}
 
@@ -35,16 +33,6 @@ func setup() error {
 
 	testSrc = filepath.Join(dir, "testSrc")
 	testDst = filepath.Join(dir, "testDst")
-
-	err = os.Mkdir(testSrc, os.ModePerm)
-	if err != nil {
-		return fmt.Errorf("failed creating test source directory %s: %v", testSrc, err)
-	}
-
-	err = os.Mkdir(testDst, os.ModePerm)
-	if err != nil {
-		return fmt.Errorf("failed creating test destination directory %s: %v", testDst, err)
-	}
 
 	for _, d := range testDirs {
 		err := os.MkdirAll(filepath.Join(testSrc, d), os.ModePerm)
@@ -118,17 +106,67 @@ func TestRecursiveCopy(t *testing.T) {
 	}{
 		{"empty_source", args{"", "/some/destination"}, true},
 		{"empty_destination", args{"/some/source", ""}, true},
-		{"dir_with_files", args{"/some/source", ""}, true},
-		{"empty_destination", args{"/some/source", ""}, true},
+		{"dir_with_files", args{filepath.Join(testSrc, "two", "c", "notPorn"), filepath.Join(testDst, "first")}, false},
+		{"empty_destination", args{"/some/source", ""}, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if err := RecursiveCopy(tt.args.src, tt.args.dst); (err != nil) != tt.wantErr {
 				t.Errorf("RecursiveCopy() error = %v, wantErr %v", err, tt.wantErr)
+				return
 			}
 
 			if tt.wantErr {
 				return
+			}
+
+			if err := srcEqualsDst(tt.args.src, tt.args.dst); err != nil {
+				t.Errorf("RecursiveCopy() fail: %v", err)
+			}
+		})
+	}
+
+}
+
+func srcEqualsDst(src, dst string) error {
+	err := filepath.Walk(dst, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+
+		return nil
+	})
+	if err != nil {
+		return fmt.Errorf("copy %v ->  %v: %v", src, dst, err)
+	}
+
+	return nil
+}
+
+func Test_fileName(t *testing.T) {
+	type args struct {
+		path string
+	}
+	tests := []struct {
+		name string
+		args args
+		want bool
+	}{
+		{"file_linux", args{"/test/folder/file.go"}, true},
+		{"file_win", args{"C:\\test\\folder\\file.go"}, true},
+		{"folder_linux", args{"/test/folder/another"}, false},
+		{"folder_win", args{"C:\\test\\folder\\another"}, false},
+		{"folder_linux_trailing_slash", args{"/test/folder/another/"}, false},
+		{"folder_win_trailing_slash", args{"C:\\test\\folder\\another\\"}, false},
+		{"folder_linux_trailing_slash_with_period", args{"/test/folder/another.go/"}, false},
+		{"folder_win_trailing_slash_with_period", args{"C:\\test\\folder\\another.go\\"}, false},
+		{"file_linux_hidden", args{"/test/folder/.hello.go"}, false},
+		{"folder_linux_hidden", args{"/test/folder/.git"}, false},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := fileName(tt.args.path); got != tt.want {
+				t.Errorf("fileName() = %v, want %v", got, tt.want)
 			}
 		})
 	}
